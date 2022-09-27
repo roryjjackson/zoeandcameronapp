@@ -1,23 +1,10 @@
-<div class="rsvp-form-container">
-  <div class="rsvp-info">
-    <h2 class ="subheader">The Details</h2>
-    <p>Saturday, June 18, 2016</p>
-    <p style="border-bottom: solid rgba(115,115,115,115) 1px; padding-bottom: 10px">5:00 PM</p>
-    <h2 class ="subheader">Ceremony & Reception</h2>
-    <p>Chapel of Our Saviour</p>
-    <p>8 4th St, Colorado Springs, CO 80906</p>
-    <img id="image8" src="https://res.cloudinary.com/dzyug4vno/image/upload/v1663071836/development/DSC02456_mui4wt.jpg" alt="">
-  </div>
   <div class="rsvp-form">
     <h2 class="reply-text">Please fill out the form below</h2>
-    <%= simple_form_for([@wedding,@rsvp]) do |f| %>
-      <div class="rsvpinput col-12 mb-3 lg-6">
-        <%= f.input :meal_choice, collection: ["Chicken", "Beef", "Vegetarian"] %>
-        <%= f.input :spotify_song, :label => "Name a song that we can add to our playlist!" %>
-        <%= f.input :attendance, :label => "Can you make it to our wedding?", :collection => %w[Yes No] %>
-        <%= f.input :attendee, :label => "Write your name" %>
-        <%= f.submit "Complete the form", class: "rsvp_button btn-flat" %>
-      </div>
+    <%= simple_form_for(@rsvp) do |f| %>
+      <%= f.input :name, :label => "Write your name" %>
+      <%= f.input :song, :label => "Name a song that we can add to our playlist!" %>
+      <%= f.input :attendance, :label => "Can you make it to our wedding?", :collection => %w[Yes No] %>
+      <%= f.input :diet, :label => "Any dietary requirements?" %>
+      <%= f.submit "Complete the form", class: "rsvp_button btn-flat" %>
     <% end %>
   </div>
-</div>
