@@ -1,67 +1,262 @@
+<a id="home">
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg" alt="" class="five">
+</a>
 <h1>The Jackson-Addletons</h1>
-<h2>25th November 2023</h2>
-<p>Welcome to our wedding site, we can’t wait to celebrate with you! Hopefully we’ve included everything you need to know.</p>
+<p>Welcome to our wedding hub, where you will find all the information you need to know about our big day! We can't wait to celebrate with you all!</p>
+<p id="demo"></p>
+<script>
+  var countDownDate = new Date("Nov 23, 2023 12:00:00").getTime();
+  var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("demo").innerHTML = days + " Days - " + hours + " Hours - "
+    + minutes + " Minutes and " + seconds + " Seconds" + " TO GO!";
 
-<%= link_to "RSVP form", new_rsvp_path %>
-<%= link_to "RSVP results", rsvps_path %>
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Its the Big Day!";
+    }
+  }, 1000);
+</script>
 
-<h2>Wedding Committee</h2>
-<h3>Bridesmaids</h3>
-<div class="bridesmaids">
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Louisa Abbott - The Ginger One</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Ruby Gullon - The Geordie</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Alicia Hudson - Twinny</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Orla Jackson - Little Sis</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Mairead Kempthorne</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Rosie Little-Johns - Rozatron</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Hannah Snodgrass - The American</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Lesley Sonnen - The Foghorn</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Bethan Ward - The Mancunian</h3>
-  <p></p>
+<h2>25th November 2023   |   The Byre at Inchyra</h2>
+<h3></h3>
+<a href="https://www.thebyreatinchyra.co.uk/">Glencarse, Perth PH2 7LU, UK</a>
+<%# <p>Glencarse, Perth PH2 7LU</p> %>
+<div class="rsvp-area">
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="six col-6">
+  <div class="rsvp-area-info col-6">
+    <p>PLEASE RSVP BY 31st MARCH 2023, by filling out the form below</p>
+    <div class="rsvp-btn">
+      <%= link_to "RSVP", new_rsvp_path %>
+    </div>
+    <div class="rsvp-table-btn">
+      <%= link_to "RSVP results", rsvps_path, id: "rsvp-table-button" %>
+    </div>
+  </div>
 </div>
-<div class="Groomsmen">
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Allen Butler</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Iain Addleton</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Henry Faber</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Jay Favaro</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Matthew Farkas</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Michael Hennessy</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Rory Jackson</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Daniel Sutherland</h3>
-  <p></p>
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1662628708/4f65cfe8-3323-4e45-b9d2-125dc29fa414_va8i07.jpg" alt="">
-  <h3>Nick Thrasher</h3>
-  <p></p>
+<div class="details-area">
+  <div class="details-area-info col-6">
+    <a id="details">
+      <h2>The details</h2>
+    </a>
+    <h4>Dress code</h4>
+    <p>Formal and Fancy, but be prepared for frosty scottish weather</p>
+    <p>* Umbrellas strongly advised</p>
+    <p>Parking - Click Here</p>
+    <%# <%= link_to "Click here", https://www.thebyreatinchyra.co.uk/getting-here/information-for-guests/ %>
+    <p>ADULT ONLY AFFAIR</p>
+    <p>There will be food and drinks at reception, we've covered some of the costs, but come prepared if you fancy a cocktail!</p>
+    <p>Any Questions? zoeandcam2023@gmail.com</p>
+  </div>
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02500_wn01f3.jpg" alt="" class="two col-6">
+</div>
+<div class="wedding-committee-titles">
+  <a id="wedding-committee">
+  <%# <h1>Wedding Committee</h1> %>
+    <h1>Bridesmaids</h1>
+  </a>
+  <h1>Groomsmen</h1>
+</div>
+
+
+<div class="wedding-committee-area">
+  <div class="bridesmaids col-6">
+    <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02483_aanuuo.jpg" alt="" class="one"> %>
+    <div class="bridesmaids-list">
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112213/zoe4_eqjnhe.jpg" alt="">
+        <div class="card-info">
+          <h4>Louisa Abbott</h4>
+          <h5>The Ginger One</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112213/zoe6_zaw9zf.jpg" alt="">
+        <div class="card-info">
+          <h4>Ruby Gullon</h4>
+          <h5>The Geordie</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666111727/WhatsApp_Image_2022-10-18_at_4.52.50_PM_eio1ft.jpg" alt="">
+        <div class="card-info">
+          <h4>Alicia Hudson</h4>
+          <h5>Twinny</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112212/zoe2_xlnz0u.jpg" alt="">
+        <div class="card-info">
+          <h4>Orla Jackson</h4>
+          <h5>Little Sis</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112213/zoe5_d0hcqx.jpg" alt="">
+        <div class="card-info">
+          <h4>Mairead Kempthorne</h4>
+          <h5>Lord Maz</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112212/zoe1_mgsxq7.jpg" alt="">
+        <div class="card-info">
+          <h4>Rosie Little-Johns</h4>
+          <h5>Rozatron</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112037/279281430_1025547491704475_9133770342258644086_n_uph7og.jpg" alt="">
+        <div class="card-info">
+          <h4>Hannah Snodgrass</h4>
+          <h5>The American</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666111848/WhatsApp_Image_2022-10-18_at_4.45.01_PM_hfygrj.jpg" alt="">
+        <div class="card-info">
+          <h4>Lesley Sonnen</h4>
+          <h5>The Foghorn</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112212/zoe3_ps4f4y.jpg" alt="">
+        <div class="card-info">
+          <h4>Bethan Ward</h4>
+          <h5>The Mancunian</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="groomsmen col-6">
+    <div class="groomsmen-list">
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Allen Butler</h4>
+          <h5>The Best Man</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Iain Addleton</h4>
+          <h5>The Brother</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Henry Faber</h4>
+          <h5>The Mancunian</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Jay Favaro</h4>
+          <h5>The Mancunian</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Matthew Farkas</h4>
+          <h5>The Mancunian</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Rory Jackson</h4>
+          <h5>The Bro In Law</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Michael Hennessy</h4>
+          <h5>The Hairy One</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Daniel Sutherland</h4>
+          <h5>"Suds"</h5>
+        </div>
+      </div>
+      <div class="vip">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="">
+        <div class="card-info">
+          <h4>Nick Thrasher</h4>
+          <h5>The Mancunian</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666122809/zoe_group_photo_wedding_kxtjkn.jpg" alt="" class="four">
+<div class="schedule-area">
+  <div class="travel col-4">
+    <a id="travel-and-accommodation">
+      <h3>Travel & Accommodation</h3>
+    </a>
+    <p>Our venue is tucked away in the countryside a few miles away from the city of Perth.</p>
+    <p>There are ample accommodation options nearby ranging from Premier and Holiday Inns to 5* resorts and self-catering cottages.</p>
+    <p>The venue has a list of local suggestions, but you should also be able to find plenty of options via booking.com or a good old fashioned Google search.</p>
+    <a href="https://www.thebyreatinchyra.co.uk/place-weddings-perthshire/places-to-stay/">Click here</a>
+  </div>
+  <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="seven col-6"> %>
+  <div class="schedule col-4">
+    <a id="schedule">
+      <h2>Order of the day</h2>
+    </a>
+    <div class="schedule-event">
+      <h5>1:00pm</h5>
+      <p>Arrival and welcoming of guests 👋🏼</p>
+    </div>
+    <div class="schedule-event">
+
+      <h5>2:00pm</h5>
+      <p>Ceremony 🕊</p>
+    </div>
+    <div class="schedule-event">
+      <h5>2:30pm</h5>
+      <p>Canopés 🫒</p>
+    </div>
+    <div class="schedule-event">
+      <h5>5:00pm</h5>
+      <p>Wedding breakfast 🐷</p>
+    </div>
+    <div class="schedule-event">
+      <h5>7:00pm</h5>
+      <p>Party and evening guests arrival 🥳</p>
+    </div>
+    <div class="schedule-event">
+      <h5>12:00am</h5>
+      <p>Carriages 💤</p>
+    </div>
+  </div>
+  <div class="registry col-4">
+    <a id="registry">
+      <h3>Registry</h3>
+    </a>
+    <p>COMING SOON</p>
+  </div>
+  <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02503_tlgzxu.jpg" alt="" class="eight col-4"> %>
+</div>
+
+
+
+
+<div class="footer">
+<p>PLEASE RSVP BY 31st MARCH 2023</p>
+  <p>Any questions? zoeandcam2023@gmail.com</p>
+  <p>Proudly created with love by RORY JACKSON</p>
 </div>

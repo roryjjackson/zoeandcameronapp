@@ -120,6 +120,9 @@ GEM
     ffi (1.15.5)
     font-awesome-sass (6.2.0)
       sassc (~> 2.0)
+    gif_countdown (0.1.0)
+      i18n
+      rmagick (>= 4.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     http-accept (1.7.0)
@@ -217,6 +220,7 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.5)
+    rmagick (5.0.0)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -285,6 +289,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass (~> 6.1)
+  gif_countdown
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
