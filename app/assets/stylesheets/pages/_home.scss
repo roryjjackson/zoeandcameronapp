@@ -1,1 +1,186 @@
 // Specific CSS for your home-page
+.maininfo img {
+  max-height: 100px;
+}
+
+h1 {
+  font-family: 'Allegedly', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: 'Balechin Royalo', sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Balechin Royalo', sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Balechin Royalo', sans-serif;
+  font-size: 20px;
+  // text-align: center;
+}
+
+h5 {
+  font-family: 'Balechin Royalo', sans-serif;
+  font-size: 16px;
+  // font-style: italic;
+  text-align: center;
+}
+
+p {
+  font-family: 'Balechin Royalo', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+.rsvp-btn {
+  text-align: center;
+  border: solid black 2px;
+  text-decoration: none;
+  color: red;
+  text-align: center;
+  // margin: 10px 300px;
+  margin: auto;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.rsvp-button:hover {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-family: 'Balechin Royalo', sans-serif;
+
+}
+
+.rsvp-table-btn {
+  // border: solid black 2px;
+  text-decoration: none;
+  color: red;
+  text-align: center;
+}
+
+#rsvp-table-button {
+  font-size: 14px;
+  border: none;
+
+}
+
+.one {
+  max-width: 450px;
+}
+.two {
+  max-height: 400px;
+  // position: absolute;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // margin: 50px;
+
+}
+.three {
+  max-height: 150px;
+  // position: absolute;
+  object-fit: cover;
+}
+.four {
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+.five {
+  max-height: 500px;
+  // position: absolute;
+  object-fit: cover;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.six {
+  max-height: 400px;
+  // width: 400px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.seven {
+  max-height: 400px;
+  // width: 400px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+p#demo {
+  font-size: 23px;
+}
+
+.rsvp-area {
+  display: flex;
+  margin: 50px;
+  align-items: center;
+}
+
+.rsvp-area-info {
+  // margin-left: 30px;
+  // margin-right: 30px;
+  // display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.details-area {
+  display: flex;
+  margin: 50px 50px;
+  align-items: center;
+}
+
+.details-area-info {
+  // margin-left: 30px;
+  // margin-right: 30px;
+  // display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.schedule-event {
+  // border-bottom: solid black 1px;
+  // max-width: 300px;
+  // text-align: center;
+  margin: 10px;
+}
+
+.schedule {
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: solid black 1px;
+  padding: 20px;
+}
+
+.schedule-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.travel {
+  padding: 20px;
+}
