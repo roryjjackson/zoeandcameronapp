@@ -2,7 +2,8 @@
   <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg" alt="" class="five">
 </a>
 <h1>The Jackson-Addletons</h1>
-<p>Welcome to our wedding hub, where you will find all the information you need to know about our big day! We can't wait to celebrate with you all!</p>
+<p>Welcome! We may already be legally wed, but that doesn't mean we're missing the opportunity to celebrate with our nearest and dearest!</p>
+<p>Suit up, boot up and get ready for a Scottish throwdown with a twist!</p>
 <p id="demo"></p>
 <script>
   var countDownDate = new Date("Nov 23, 2023 12:00:00").getTime();
@@ -23,31 +24,35 @@
   }, 1000);
 </script>
 
-<h2>25th November 2023   |   The Byre at Inchyra</h2>
-<h3></h3>
-<a href="https://www.thebyreatinchyra.co.uk/">Glencarse, Perth PH2 7LU, UK</a>
+<h2>25th November 2023 | The Byre at Inchyra</h2>
+<a href="https://www.thebyreatinchyra.co.uk/" target="_blank"><h3>Glencarse, Perth PH2 7LU, UK</h3>
+</a>
 <%# <p>Glencarse, Perth PH2 7LU</p> %>
 <div class="rsvp-area">
   <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="six col-6">
   <div class="rsvp-area-info col-6">
-    <p>PLEASE RSVP BY 31st MARCH 2023, by filling out the form below</p>
+    <h4>PLEASE RSVP BY 31st MARCH 2023</h4>
+    <a id="rsvp">
+      <p>Fill out the form below</p>
+    </a>
     <div class="rsvp-btn">
-      <%= link_to "RSVP", new_rsvp_path %>
+      <%= link_to "RSVP", new_rsvp_path, id: "rsvp-big-button" %>
     </div>
     <div class="rsvp-table-btn">
       <%= link_to "RSVP results", rsvps_path, id: "rsvp-table-button" %>
     </div>
   </div>
 </div>
+
 <div class="details-area">
   <div class="details-area-info col-6">
-    <a id="details">
-      <h2>The details</h2>
-    </a>
+    <h2>The details</h2>
     <h4>Dress code</h4>
     <p>Formal and Fancy, but be prepared for frosty scottish weather</p>
-    <p>* Umbrellas strongly advised</p>
-    <p>Parking - Click Here</p>
+    <a id="details">
+      <p><strong>* Umbrellas strongly advised</strong></p>
+    </a>
+    <p>Parking - <a href="https://www.thebyreatinchyra.co.uk/getting-here/information-for-guests/" target="_blank" id="parking-link">Click Here</a></p>
     <%# <%= link_to "Click here", https://www.thebyreatinchyra.co.uk/getting-here/information-for-guests/ %>
     <p>ADULT ONLY AFFAIR</p>
     <p>There will be food and drinks at reception, we've covered some of the costs, but come prepared if you fancy a cocktail!</p>
@@ -56,17 +61,11 @@
   <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02500_wn01f3.jpg" alt="" class="two col-6">
 </div>
 <div class="wedding-committee-titles">
-  <a id="wedding-committee">
-  <%# <h1>Wedding Committee</h1> %>
-    <h1>Bridesmaids</h1>
-  </a>
+  <h1>Bridesmaids</h1>
   <h1>Groomsmen</h1>
 </div>
-
-
 <div class="wedding-committee-area">
   <div class="bridesmaids col-6">
-    <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02483_aanuuo.jpg" alt="" class="one"> %>
     <div class="bridesmaids-list">
       <div class="vip">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112213/zoe4_eqjnhe.jpg" alt="">
@@ -83,9 +82,11 @@
         </div>
       </div>
       <div class="vip">
-        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666111727/WhatsApp_Image_2022-10-18_at_4.52.50_PM_eio1ft.jpg" alt="">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666166533/alicia_z6bkdd.jpg" alt="">
         <div class="card-info">
-          <h4>Alicia Hudson</h4>
+          <a id="wedding-committee">
+            <h4>Alicia Hudson</h4>
+          </a>
           <h5>Twinny</h5>
         </div>
       </div>
@@ -118,14 +119,14 @@
         </div>
       </div>
       <div class="vip">
-        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666111848/WhatsApp_Image_2022-10-18_at_4.45.01_PM_hfygrj.jpg" alt="">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666166524/sonnen_ho7gzn.jpg" alt="">
         <div class="card-info">
           <h4>Lesley Sonnen</h4>
           <h5>The Foghorn</h5>
         </div>
       </div>
       <div class="vip">
-        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112212/zoe3_ps4f4y.jpg" alt="">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666166640/zoe3_ps4f4y.jpg" alt="">
         <div class="card-info">
           <h4>Bethan Ward</h4>
           <h5>The Mancunian</h5>
@@ -204,59 +205,54 @@
 <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666122809/zoe_group_photo_wedding_kxtjkn.jpg" alt="" class="four">
 <div class="schedule-area">
   <div class="travel col-4">
-    <a id="travel-and-accommodation">
-      <h3>Travel & Accommodation</h3>
-    </a>
-    <p>Our venue is tucked away in the countryside a few miles away from the city of Perth.</p>
-    <p>There are ample accommodation options nearby ranging from Premier and Holiday Inns to 5* resorts and self-catering cottages.</p>
-    <p>The venue has a list of local suggestions, but you should also be able to find plenty of options via booking.com or a good old fashioned Google search.</p>
-    <a href="https://www.thebyreatinchyra.co.uk/place-weddings-perthshire/places-to-stay/">Click here</a>
+    <div class="travel-info">
+      <h2>Travel & Accommodation</h2>
+      <p>Our venue is tucked away in the countryside a few miles away from the city of Perth.</p>
+      <p>There are ample accommodation options nearby ranging from Premier and Holiday Inns to 5* resorts and self-catering cottages.</p>
+      <p>The venue has a list of local suggestions, but you should also be able to find plenty of options via booking.com or a good old fashioned Google search.</p>
+      <p></p><a href="https://www.thebyreatinchyra.co.uk/place-weddings-perthshire/places-to-stay/" target="_blank"><p>Click here</p></a>
+    </div>
   </div>
   <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="seven col-6"> %>
   <div class="schedule col-4">
-    <a id="schedule">
-      <h2>Order of the day</h2>
-    </a>
-    <div class="schedule-event">
-      <h5>1:00pm</h5>
-      <p>Arrival and welcoming of guests 👋🏼</p>
-    </div>
-    <div class="schedule-event">
-
-      <h5>2:00pm</h5>
-      <p>Ceremony 🕊</p>
-    </div>
-    <div class="schedule-event">
-      <h5>2:30pm</h5>
-      <p>Canopés 🫒</p>
-    </div>
-    <div class="schedule-event">
-      <h5>5:00pm</h5>
-      <p>Wedding breakfast 🐷</p>
-    </div>
-    <div class="schedule-event">
-      <h5>7:00pm</h5>
-      <p>Party and evening guests arrival 🥳</p>
-    </div>
-    <div class="schedule-event">
-      <h5>12:00am</h5>
-      <p>Carriages 💤</p>
+      <h1>Order of the day</h1>
+    <div class="schedule-list">
+      <div class="schedule-event">
+        <h5>1:00pm | Arrival and welcoming of guests 👋🏼</h5>
+      </div>
+      <p>~</p>
+      <div class="schedule-event">
+        <h5>2:00pm | Ceremony 🕊</h5>
+      </div>
+      <p>~</p>
+      <div class="schedule-event">
+        <h5>2:30pm | Canopés 🫒</h5>
+      </div>
+      <p>~</p>
+      <div class="schedule-event">
+        <h5>5:00pm | Wedding breakfast 🐷</h5>
+      </div>
+      <p>~</p>
+      <div class="schedule-event">
+        <h5>7:00pm | Party and evening guests arrival 🥳</h5>
+      </div>
+      <p>~</p>
+      <div class="schedule-event">
+        <h5>12:00am | Carriages 💤</h5>
+      </div>
     </div>
   </div>
   <div class="registry col-4">
-    <a id="registry">
-      <h3>Registry</h3>
-    </a>
-    <p>COMING SOON</p>
+    <div class="regsitry-info">
+      <h2>Registry</h2>
+      <p>COMING SOON</p>
+      <h2>Video and photo share</h2>
+      <p>We will soon have an album accessible by all, where you can upload any photos from the day, as well as view any taken by others!</p>
+    </div>
   </div>
-  <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02503_tlgzxu.jpg" alt="" class="eight col-4"> %>
 </div>
-
-
-
-
 <div class="footer">
-<p>PLEASE RSVP BY 31st MARCH 2023</p>
-  <p>Any questions? zoeandcam2023@gmail.com</p>
-  <p>Proudly created with love by RORY JACKSON</p>
+  <a id="schedule">
+    <p>Proudly created with love by RORY JACKSON</p>
+  </a>
 </div>

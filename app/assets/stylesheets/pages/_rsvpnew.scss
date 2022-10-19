@@ -1,0 +1,60 @@
+.rsvp-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rsvp-title {
+  font-size: 50px;
+  margin: 80px 0 80px 0;
+}
+
+.form-q {
+  text-align: center;
+  color: red;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Balechin Royalo', sans-serif;
+}
+
+// html body{
+//   background-image: url("https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg");
+//   object-fit: cover;
+// }
+
+input#rsvp_attendance_true {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+}
+
+#rsvp-confirm {
+  // background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Balechin Royalo', sans-serif;
+}
+
+legend.col-form-label.pt-0 {
+  font-family: 'Balechin Royalo', sans-serif;
+}
+
+.table-container {
+  // width: 80%;
+  margin: 50px;
+}
+
+.rsvp-table-headers {
+  text-align: center;
+}
+
+.rsvp-data {
+  text-align: center;
+}

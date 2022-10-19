@@ -34,4 +34,10 @@
   background-color: white;
   width: 100%;
   height: 80px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.log-item:hover {
+  color: rgba(180, 180, 180, 180);
 }

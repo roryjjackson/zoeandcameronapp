@@ -7,19 +7,24 @@ h1 {
   font-family: 'Allegedly', sans-serif;
   font-size: 60px;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 h2 {
   font-family: 'Balechin Royalo', sans-serif;
   font-size: 32px;
   text-align: center;
+  // padding-bottom: 5px;
 }
 
 h3 {
   font-family: 'Balechin Royalo', sans-serif;
   font-size: 26px;
   text-align: center;
+}
+
+h3:hover {
+  color: rgba(180, 180, 180, 180);
 }
 
 h4 {
@@ -41,9 +46,15 @@ p {
   font-size: 16px;
 }
 
+#parking-link {
+  font-family: 'Balechin Royalo', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
 .rsvp-btn {
   text-align: center;
-  border: solid black 2px;
+  // border: solid black 2px;
   text-decoration: none;
   color: red;
   text-align: center;
@@ -54,36 +65,45 @@ p {
   justify-content: center;
 }
 
-.rsvp-button:hover {
-  color: black;
+.rsvp-btn:hover {
+  color: rgba(180, 180, 180, 180);
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-size: 30px;
+  font-size: 68px;
   font-family: 'Balechin Royalo', sans-serif;
-
 }
 
-.rsvp-table-btn {
-  // border: solid black 2px;
-  text-decoration: none;
-  color: red;
-  text-align: center;
+a:hover {
+  color: rgba(180, 180, 180, 180);
 }
+// .rsvp-table-btn {
+//   // border: solid black 2px;
+//   text-decoration: none;
+//   color: red;
+//   text-align: center;
+// }
 
 #rsvp-table-button {
   font-size: 14px;
   border: none;
+}
 
+#rsvp-big-button {
+  color: rgb(0, 145, 0);
+}
+
+#rsvp-big-button:hover {
+  color: limegreen;
 }
 
 .one {
   max-width: 450px;
 }
 .two {
-  max-height: 400px;
+  max-height: 450px;
   // position: absolute;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -113,7 +133,7 @@ a {
 }
 
 .six {
-  max-height: 400px;
+  max-height: 450px;
   // width: 400px;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -143,6 +163,15 @@ p#demo {
   justify-content: center;
   text-align: center;
 }
+
+// .rsvp-btn:hover {
+//   background-color: rgba(180, 180, 180, 180);
+//   // color: rgba(180, 180, 180, 180);
+// }
+
+// .rsvp-btn a:hover {
+//   color: black;
+// }
 
 .details-area {
   display: flex;
@@ -181,6 +210,20 @@ p#demo {
   margin: 30px;
 }
 
-.travel {
+.schedule-list {
   padding: 20px;
+}
+
+.travel {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registry {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

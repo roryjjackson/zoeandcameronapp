@@ -1,0 +1,5 @@
+class AddAttendanceToRsvps < ActiveRecord::Migration[7.0]
+  def change
+    change_column :rsvps, :attendance, :string
+  end
+end

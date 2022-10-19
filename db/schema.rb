@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_27_105115) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_19_122421) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "rsvps", force: :cascade do |t|
     t.string "name"
     t.string "song"
-    t.boolean "attendance"
+    t.string "attendance"
     t.string "diet"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -33,7 +33,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_27_105115) do
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
+    t.string "unique_key"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
 end
