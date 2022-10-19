@@ -1,7 +1,23 @@
-<% @rsvps.each do |rsvp| %>
-  <p><%= rsvp.name %></p>
-  <p><%= rsvp.song %></p>
-  <p><%= rsvp.diet %></p>
-  <p><%= rsvp.attendance %></p>
-<% end %>
-<%= link_to "Return home", root_path %>
+<h2>Total guests coming</h2>
+<p><%= @total_participants %></p>
+<h2><%= link_to "Return home", root_path %></h2>
+
+
+<div class="table-container">
+  <table class="table">
+    <tr class="rsvp-table-headers">
+      <th>NAME</th>
+      <th>COMING?</th>
+      <th>DIET RQM</th>
+      <th>SONG</th>
+    </tr>
+    <% @rsvps.each do |rsvp| %>
+    <tr class="rsvp-data">
+      <td><%=rsvp.name%></td>
+      <td><%=rsvp.attendance%></td>
+      <td><%=rsvp.diet%></td>
+      <td><%=rsvp.song%></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
