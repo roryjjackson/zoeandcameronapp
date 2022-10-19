@@ -3,6 +3,10 @@
   max-height: 100px;
 }
 
+html body {
+  background-color: #975a1514;
+}
+
 h1 {
   font-family: 'Allegedly', sans-serif;
   font-size: 60px;
@@ -144,6 +148,15 @@ a:hover {
   // width: 400px;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.eight {
+  max-height: 300px;
+  // object-fit: cover;
+  position: absolute;
+  opacity: 0.4;
+  transform: rotate(20deg);
+  // z-index: 0;
 }
 
 p#demo {

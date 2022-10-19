@@ -63,8 +63,30 @@
 .vip {
  text-align: center;
  font-size: 18px;
+ transform: scale(1);
+ transition: transform .5s;
 }
+
+.avatar {
+  transform: scale(1);
+  transition: transform .5s;
+}
+
+.avatar:hover {
+  transform: scale(3.6);
+  z-index: 4;
+}
+
+// .vip:hover {
+//   transform: scale(1.8);
+//   z-index: 3;
+// }
 
 .card-info {
   margin: 10px;
 }
+
+// .avatar:hover {
+//   height: 180px;
+//   width: 180px;
+// }
