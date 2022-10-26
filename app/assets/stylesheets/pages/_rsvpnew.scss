@@ -1,3 +1,7 @@
+.rsvp-form-body {
+  margin: 50px;
+}
+
 .rsvp-form {
   display: flex;
   justify-content: center;
@@ -9,11 +13,6 @@
   margin: 80px 0 80px 0;
 }
 
-.form-q {
-  text-align: center;
-  color: red;
-}
-
 label {
   display: flex;
   align-items: center;
@@ -22,11 +21,6 @@ label {
   font-size: 20px;
   font-family: 'Balechin Royalo', sans-serif;
 }
-
-// html body{
-//   background-image: url("https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg");
-//   object-fit: cover;
-// }
 
 input#rsvp_attendance_true {
   background-color: pink;
