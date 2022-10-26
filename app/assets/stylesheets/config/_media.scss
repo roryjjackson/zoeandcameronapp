@@ -1,4 +1,4 @@
-@media (max-width: 540px) {
+@media (max-width: 450px) {
   .navbar {
     display: none;
     // display: grid;
@@ -117,23 +117,34 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
   }
 
-  .wedding-committee-area {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
+  // .wedding-committee-area {
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   grid-gap: 10px;
+  // }
 
   .bridesmaids {
+    // overflow: hidden;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-gap: 10px;
+    // padding: 20px;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding: 36px;
   }
 
   .bridesmaids-list {
     // display: flex;
     // align-items: center;
+    // width: 100%;
+    // height: 100%;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     width: 100%;
     height: 100%;
     padding-top: 10px;
@@ -141,17 +152,24 @@
   }
 
   .groomsmen {
+    // overflow: hidden;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-gap: 10px;
+    // padding: 20px;
+    // border-left: none;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 20px;
-    border-left: none;
+    display: flex;
+    align-items: center;
+    padding: 36px;
   }
 
   .groomsmen-list {
     // display: flex;
     // align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     width: 100%;
     height: 100%;
     padding-top: 10px;
@@ -217,10 +235,22 @@
   }
 }
 
-@media (max-width: 880px) {
-.welcome-info {
-  margin: 15px;
-}
+@media (max-width: 760px) {
+  .welcome-info {
+    margin: 15px;
+  }
+
+  .rsvp-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .details-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 
   #rsvp-big-button {
     font-size: 26px;
@@ -299,40 +329,51 @@
   //   align-items: center;
   // }
 
-  .bridesmaids {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 36px;
-  }
+  // .bridesmaids {
+  //   overflow: hidden;
+  //   display:grid;
+  //   align-items: center;
+  //   padding: 36px;
+  // }
 
-  .bridesmaids-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  // .bridesmaids {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-gap: 10px;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding-top: 10px;
+  //   padding-bottom: 10px;
+  // }
 
-  .groomsmen {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 36px;
-    // border-left: solid black 1px;
-  }
 
-  .groomsmen-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  // .bridesmaids-list {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-gap: 10px;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+  // }
+
+  // .groomsmen {
+  //   overflow: hidden;
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 36px;
+  //   // border-left: solid black 1px;
+  // }
+
+  // .groomsmen-list {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-gap: 10px;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+  // }
 
   .vip {
    text-align: center;
