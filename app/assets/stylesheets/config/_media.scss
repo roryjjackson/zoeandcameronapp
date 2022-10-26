@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .navbar {
     display: none;
     // display: grid;
@@ -125,8 +125,9 @@
 
   .bridesmaids {
     overflow: hidden;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     padding: 20px;
   }
 
@@ -141,8 +142,9 @@
 
   .groomsmen {
     overflow: hidden;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     padding: 20px;
     border-left: none;
   }
