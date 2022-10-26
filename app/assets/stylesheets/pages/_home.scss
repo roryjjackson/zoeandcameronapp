@@ -4,7 +4,10 @@
 }
 
 html body {
-  background-color: #975a1514;
+  // background-color: #975a1514;
+
+  // background-repeat: no-repeat;
+  // background-opa
 }
 
 h1 {
@@ -167,9 +170,20 @@ p#demo {
   display: flex;
   margin: 50px;
   align-items: center;
+
 }
 
 .rsvp-area-info {
+  padding: 50px;
+  margin: 20px;
+  // border: solid black 1px;
+  // background-image: url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666714177/autumn_background_zoeandcam_dwgjzg.jpg);
+  // background-size: 500px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // background-image: url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666715421/pexels-fwstudio-172292_tfk7h5.jpg);
+  // background-size: 500px;
+  // // height: 450px;
   // margin-left: 30px;
   // margin-right: 30px;
   // display: flex;
