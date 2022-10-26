@@ -3,12 +3,9 @@
   max-height: 100px;
 }
 
-html body {
-  // background-color: #975a1514;
+// html body {
 
-  // background-repeat: no-repeat;
-  // background-opa
-}
+// }
 
 h1 {
   font-family: 'Allegedly', sans-serif;
@@ -21,7 +18,6 @@ h2 {
   font-family: 'Balechin Royalo', sans-serif;
   font-size: 32px;
   text-align: center;
-  // padding-bottom: 5px;
 }
 
 h3 {
@@ -37,13 +33,11 @@ h3:hover {
 h4 {
   font-family: 'Balechin Royalo', sans-serif;
   font-size: 20px;
-  // text-align: center;
 }
 
 h5 {
   font-family: 'Balechin Royalo', sans-serif;
   font-size: 16px;
-  // font-style: italic;
   text-align: center;
 }
 
@@ -59,18 +53,16 @@ p {
   font-size: 16px;
 }
 
-.rsvp-btn {
-  text-align: center;
-  // border: solid black 2px;
-  text-decoration: none;
-  color: red;
-  text-align: center;
-  // margin: 10px 300px;
-  margin: auto;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-}
+// .rsvp-btn {
+//   text-align: center;
+//   text-decoration: none;
+//   color: red;
+//   text-align: center;
+//   margin: auto;
+//   // width: 200px;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .rsvp-btn:hover {
   color: rgba(180, 180, 180, 180);
@@ -86,12 +78,6 @@ a {
 a:hover {
   color: rgba(180, 180, 180, 180);
 }
-// .rsvp-table-btn {
-//   // border: solid black 2px;
-//   text-decoration: none;
-//   color: red;
-//   text-align: center;
-// }
 
 #rsvp-table-button {
   font-size: 14px;
@@ -100,6 +86,7 @@ a:hover {
 
 #rsvp-big-button {
   color: rgb(0, 145, 0);
+  text-align: center;
 }
 
 #rsvp-big-button:hover {
@@ -111,15 +98,11 @@ a:hover {
 }
 .two {
   max-height: 450px;
-  // position: absolute;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  // margin: 50px;
-
 }
 .three {
   max-height: 150px;
-  // position: absolute;
   object-fit: cover;
 }
 .four {
@@ -132,7 +115,6 @@ a:hover {
 }
 .five {
   max-height: 500px;
-  // position: absolute;
   object-fit: cover;
   width: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -141,25 +123,21 @@ a:hover {
 
 .six {
   max-height: 450px;
-  // width: 400px;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .seven {
   max-height: 400px;
-  // width: 400px;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .eight {
   max-height: 300px;
-  // object-fit: cover;
   position: absolute;
   opacity: 0.4;
   transform: rotate(20deg);
-  // z-index: 0;
 }
 
 p#demo {
@@ -170,35 +148,23 @@ p#demo {
   display: flex;
   margin: 50px;
   align-items: center;
+}
 
+.rsvp-area-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rsvp-area-info {
   padding: 50px;
   margin: 20px;
-  // border: solid black 1px;
-  // background-image: url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666714177/autumn_background_zoeandcam_dwgjzg.jpg);
-  // background-size: 500px;
   background-repeat: no-repeat;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  // background-image: url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666715421/pexels-fwstudio-172292_tfk7h5.jpg);
-  // background-size: 500px;
-  // // height: 450px;
-  // margin-left: 30px;
-  // margin-right: 30px;
-  // display: flex;
   justify-content: center;
   text-align: center;
+  max-width: 350px;
 }
-
-// .rsvp-btn:hover {
-//   background-color: rgba(180, 180, 180, 180);
-//   // color: rgba(180, 180, 180, 180);
-// }
-
-// .rsvp-btn a:hover {
-//   color: black;
-// }
 
 .details-area {
   display: flex;
@@ -207,23 +173,16 @@ p#demo {
 }
 
 .details-area-info {
-  // margin-left: 30px;
-  // margin-right: 30px;
-  // display: flex;
   justify-content: center;
   text-align: center;
   padding: 10px;
 }
 
 .schedule-event {
-  // border-bottom: solid black 1px;
-  // max-width: 300px;
-  // text-align: center;
   margin: 10px;
 }
 
 .schedule {
-  // display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -232,8 +191,9 @@ p#demo {
 }
 
 .schedule-area {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
   margin: 30px;
 }
 
