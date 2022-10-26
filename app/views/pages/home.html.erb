@@ -29,16 +29,18 @@
 </a>
 <div class="rsvp-area">
   <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="six col-6">
-  <div class="rsvp-area-info col-6">
-    <h4>PLEASE RSVP BY 31st MARCH 2023</h4>
-    <a id="rsvp">
-      <p>Fill out the form below</p>
-    </a>
-    <div class="rsvp-btn">
-      <%= link_to "RSVP", new_rsvp_path, id: "rsvp-big-button" %>
-    </div>
-    <div class="rsvp-table-btn">
-      <%= link_to "RSVP replies", rsvps_path, id: "rsvp-table-button" %>
+  <div class="rsvp-area-2 col-6">
+    <div class="rsvp-area-info">
+      <h4>PLEASE RSVP BY 31st MARCH 2023</h4>
+      <a id="rsvp">
+        <p>Fill out the form below</p>
+      </a>
+      <div class="rsvp-btn">
+        <a href="/rsvps/new"><p id="rsvp-big-button">RSVP</p></a>
+      </div>
+      <div class="rsvp-table-btn">
+        <%= link_to "RSVP replies", rsvps_path, id: "rsvp-table-button" %>
+      </div>
     </div>
   </div>
 </div>
@@ -203,7 +205,7 @@
 </div>
 <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666122809/zoe_group_photo_wedding_kxtjkn.jpg" alt="" class="four">
 <div class="schedule-area">
-  <div class="travel col-4">
+  <div class="travel">
     <div class="travel-info">
       <h2>Travel & Accommodation</h2>
       <p>Our venue is tucked away in the countryside a few miles away from the city of Perth.</p>
@@ -212,8 +214,7 @@
       <p></p><a href="https://www.thebyreatinchyra.co.uk/place-weddings-perthshire/places-to-stay/" target="_blank"><p>Click here</p></a>
     </div>
   </div>
-  <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="seven col-6"> %>
-  <div class="schedule col-4">
+  <div class="schedule">
       <h1>Order of the day</h1>
     <div class="schedule-list">
       <div class="schedule-event">
@@ -241,7 +242,7 @@
       </div>
     </div>
   </div>
-  <div class="registry col-4">
+  <div class="registry">
     <div class="regsitry-info">
       <h2>Registry</h2>
       <p>COMING SOON</p>

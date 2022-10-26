@@ -4,7 +4,7 @@
 @import "config/bootstrap_variables";
 
 // External libraries
-// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 
 // Your CSS partials
@@ -13,3 +13,4 @@
 @import "components/vip";
 @import "components/footer";
 @import "pages/rsvpnew";
+@import "config/media";

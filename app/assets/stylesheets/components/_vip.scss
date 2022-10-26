@@ -18,13 +18,8 @@
 
 .bridesmaids {
   overflow: hidden;
-  // height: 120px;
-  // background: white;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  // justify-content: space-between;
-  // width: 80%;
   padding: 50px;
 }
 
@@ -40,12 +35,8 @@
 
 .groomsmen {
   overflow: hidden;
-  // background: white;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  // justify-content: space-between;
-  // width: 100%;
   padding: 50px;
   border-left: solid black 1px;
 }
@@ -77,16 +68,6 @@
   z-index: 4;
 }
 
-// .vip:hover {
-//   transform: scale(1.8);
-//   z-index: 3;
-// }
-
 .card-info {
   margin: 10px;
 }
-
-// .avatar:hover {
-//   height: 180px;
-//   width: 180px;
-// }
