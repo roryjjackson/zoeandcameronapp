@@ -98,6 +98,7 @@ a:hover {
 }
 .two {
   max-height: 450px;
+  width: 100%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
@@ -123,6 +124,7 @@ a:hover {
 
 .six {
   max-height: 450px;
+  width: 100%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
@@ -140,14 +142,22 @@ a:hover {
   transform: rotate(20deg);
 }
 
+.area-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 p#demo {
   font-size: 23px;
 }
 
 .rsvp-area {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   margin: 50px;
-  align-items: center;
+  // align-items: center;
 }
 
 .rsvp-area-2 {
@@ -167,9 +177,11 @@ p#demo {
 }
 
 .details-area {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   margin: 50px 50px;
-  align-items: center;
+  // align-items: center;
 }
 
 .details-area-info {

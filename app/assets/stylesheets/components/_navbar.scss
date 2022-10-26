@@ -24,10 +24,11 @@
 // }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
   list-style: none;
-  // margin: 10px 40px;
   padding: 0px 30px;
   position: fixed;
   top: 0;
@@ -36,7 +37,6 @@
   height: 80px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   z-index: 5;
-
 }
 
 .log-item:hover {
