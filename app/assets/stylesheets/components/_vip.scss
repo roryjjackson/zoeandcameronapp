@@ -7,13 +7,16 @@
 }
 
 .wedding-committee-titles {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  width: 100%;
 }
 
 .wedding-committee-area {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
 }
 
 .bridesmaids {
@@ -38,7 +41,7 @@
   display: flex;
   align-items: center;
   padding: 50px;
-  border-left: solid black 1px;
+  // border-left: solid black 1px;
 }
 
 .groomsmen-list {

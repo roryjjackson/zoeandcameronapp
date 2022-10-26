@@ -1,32 +1,34 @@
 <a id="home">
   <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg" alt="" class="five">
 </a>
-<h1>The Jackson-Addletons</h1>
-<p>Welcome! We may already be legally wed, but that doesn't mean we're missing the opportunity to celebrate with our nearest and dearest!</p>
-<p>Suit up, boot up and get ready for a Scottish throwdown with a twist!</p>
-<p id="demo"></p>
-<script>
-  var countDownDate = new Date("Nov 23, 2023 12:00:00").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("demo").innerHTML = days + " Days - " + hours + " Hours - "
-    + minutes + " Minutes and " + seconds + " Seconds" + " TO GO!";
+<div class="welcome-info">
+  <h1>The Jackson-Addletons</h1>
+  <p>Welcome! We may already be legally wed, but that doesn't mean we're missing the opportunity to celebrate with our nearest and dearest!</p>
+  <p>Suit up, boot up and get ready for a Scottish throwdown with a twist!</p>
+  <p id="demo"></p>
+  <script>
+    var countDownDate = new Date("Nov 23, 2023 12:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("demo").innerHTML = days + " Days - " + hours + " Hours - "
+      + minutes + " Minutes and " + seconds + " Seconds" + " TO GO!";
 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "Its the Big Day!";
-    }
-  }, 1000);
-</script>
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Its the Big Day!";
+      }
+    }, 1000);
+  </script>
 
-<h2>25th November 2023 | The Byre at Inchyra</h2>
-<a href="https://www.thebyreatinchyra.co.uk/" target="_blank"><h3>Glencarse, Perth PH2 7LU, UK</h3>
-</a>
+  <h2>25th November 2023 | The Byre at Inchyra</h2>
+  <a href="https://www.thebyreatinchyra.co.uk/" target="_blank"><h3>Glencarse, Perth PH2 7LU, UK</h3>
+  </a>
+</div>
 <div class="rsvp-area">
   <div class="area-image">
     <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="six">
@@ -70,7 +72,7 @@
   <h1>Groomsmen</h1>
 </div>
 <div class="wedding-committee-area">
-  <div class="bridesmaids col-6">
+  <div class="bridesmaids">
     <div class="bridesmaids-list">
       <div class="vip">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112213/zoe4_eqjnhe.jpg" alt="" class="avatar">
@@ -139,7 +141,7 @@
       </div>
     </div>
   </div>
-  <div class="groomsmen col-6">
+  <div class="groomsmen">
     <div class="groomsmen-list">
       <div class="vip">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015813/DSC02480_lfhjnr.jpg" alt="" class="avatar">
