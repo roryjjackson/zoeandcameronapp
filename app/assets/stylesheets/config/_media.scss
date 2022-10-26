@@ -27,11 +27,11 @@
     grid-gap: 10px;
   }
 
-  .wedding-committee-titles {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // grid-gap: 16px;
-    max-width: 100%;
+  h1.wedding-committee-titles {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // // grid-gap: 16px;
+    // max-width: 100%;
   }
 
   #rsvp-big-button {
@@ -206,170 +206,182 @@
   }
 }
 
-// @media (max-width: 780px) {
-//   #rsvp-big-button {
-//     font-size: 16px;
-//   }
+@media (max-width: 780px) {
+.welcome-info {
+  margin: 15px;
+}
 
-//   #rsvp-table-button {
-//     font-size: 10px;
-//     border: none;
-//   }
+  #rsvp-big-button {
+    font-size: 16px;
+  }
 
-//   a {
-//     text-decoration: none;
-//     color: black;
-//     font-size: 48px;
-//     font-family: 'Balechin Royalo', sans-serif;
-//   }
+  #rsvp-table-button {
+    font-size: 10px;
+    border: none;
+  }
 
-//   h4 {
-//     font-family: 'Balechin Royalo', sans-serif;
-//     font-size: 14px;
-//   }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 48px;
+    font-family: 'Balechin Royalo', sans-serif;
+  }
 
-//   h5 {
-//     font-family: 'Balechin Royalo', sans-serif;
-//     font-size: 10px;
-//     text-align: center;
-//   }
+  h4 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 14px;
+  }
 
-//   p {
-//     font-family: 'Balechin Royalo', sans-serif;
-//     text-align: center;
-//     font-size: 10px;
-//   }
+  h5 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
 
-//   h1 {
-//     font-family: 'Allegedly', sans-serif;
-//     font-size: 40px;
-//     text-align: center;
-//     margin: 20px;
-//   }
+  p {
+    font-family: 'Balechin Royalo', sans-serif;
+    text-align: center;
+    font-size: 10px;
+  }
 
-//   h2 {
-//     font-family: 'Balechin Royalo', sans-serif;
-//     font-size: 24px;
-//     text-align: center;
-//   }
+  h1 {
+    font-family: 'Allegedly', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+  }
 
-//   h3 {
-//     font-family: 'Balechin Royalo', sans-serif;
-//     font-size: 22px;
-//     text-align: center;
-//   }
+  h2 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
 
-//   .vip img {
-//     height: 40px;
-//     width: 40px;
-//     border-radius: 50%;
-//     object-fit: cover;
-//     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//   }
+  h3 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
 
-//   .wedding-committee-titles {
-//     display: flex;
-//     justify-content: space-evenly;
-//   }
+  .vip img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
 
-//   .wedding-committee-area {
-//     display: flex;
-//     align-items: center;
-//   }
+  // .wedding-committee-titles {
+  //   display: flex;
+  //   justify-content: space-evenly;
+  // }
 
-//   .bridesmaids {
-//     overflow: hidden;
-//     display: flex;
-//     align-items: center;
-//     padding: 36px;
-//   }
+  // .wedding-committee-area {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
-//   .bridesmaids-list {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-gap: 10px;
-//     width: 100%;
-//     height: 100%;
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-//   }
+  .bridesmaids {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 36px;
+  }
 
-//   .groomsmen {
-//     overflow: hidden;
-//     display: flex;
-//     align-items: center;
-//     padding: 36px;
-//     border-left: solid black 1px;
-//   }
+  .bridesmaids-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-//   .groomsmen-list {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-gap: 10px;
-//     width: 100%;
-//     height: 100%;
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-//   }
+  .groomsmen {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 36px;
+    // border-left: solid black 1px;
+  }
 
-//   .vip {
-//    text-align: center;
-//    font-size: 14px;
-//    transform: scale(1);
-//    transition: transform .5s;
-//   }
+  .groomsmen-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-//   .avatar {
-//     transform: scale(1);
-//     transition: transform .5s;
-//   }
+  .vip {
+   text-align: center;
+   font-size: 14px;
+   transform: scale(1);
+   transition: transform .5s;
+  }
 
-//   .avatar:hover {
-//     transform: scale(3.6);
-//     z-index: 4;
-//   }
+  .avatar {
+    transform: scale(1);
+    transition: transform .5s;
+  }
 
-//   .card-info {
-//     margin: 8px;
-//   }
+  .avatar:hover {
+    transform: scale(3.6);
+    z-index: 4;
+  }
 
-//   .schedule-event {
-//     margin: 8px;
-//   }
+  .card-info {
+    margin: 8px;
+  }
 
-//   .schedule {
-//     align-items: center;
-//     justify-content: center;
-//     margin: auto;
-//     border: solid black 1px;
-//     padding: 14px;
-//   }
+  .schedule-event {
+    margin: 8px;
+  }
 
-//   .schedule-area {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-gap: 10px;
-//     margin: 18px;
-//   }
+  .schedule {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: solid black 1px;
+    padding: 14px;
+  }
 
-//   .schedule-list {
-//     padding: 14px;
-//   }
+  .schedule-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 18px;
+  }
 
-//   .travel {
-//     padding: 18px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
+  .schedule-list {
+    padding: 14px;
+  }
 
-//   .registry {
-//     padding: 18px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
+  .travel {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registry {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .six {
+    height: 100%;
+  }
+
+  .two {
+    height: 100%;
+  }
+}
 
 // @media (max-width: 900px) {
 //   #rsvp-big-button {
