@@ -1,3 +1,185 @@
+@media (max-width: 480px) {
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    list-style: none;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+
+  #rsvp-big-button {
+    font-size: 10px;
+  }
+
+  #rsvp-table-button {
+    font-size: 8px;
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Balechin Royalo', sans-serif;
+  }
+
+  h4 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 10px;
+  }
+
+  h5 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Balechin Royalo', sans-serif;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  h1 {
+    font-family: 'Allegedly', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 16px;
+  }
+
+  h2 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Balechin Royalo', sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .vip img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .wedding-committee-titles {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .wedding-committee-area {
+    display: flex;
+    align-items: center;
+  }
+
+  .bridesmaids {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bridesmaids-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .groomsmen {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-left: solid black 1px;
+  }
+
+  .groomsmen-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .vip {
+   text-align: center;
+   font-size: 10px;
+   transform: scale(1);
+   transition: transform .5s;
+  }
+
+  .avatar {
+    transform: scale(1);
+    transition: transform .5s;
+  }
+
+  .avatar:hover {
+    transform: scale(3.6);
+    z-index: 4;
+  }
+
+  .card-info {
+    margin: 6px;
+  }
+
+  .schedule-event {
+    margin: 6px;
+  }
+
+  .schedule {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: solid black 1px;
+    padding: 10px;
+  }
+
+  .schedule-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 12px;
+  }
+
+  .schedule-list {
+    padding: 10px;
+  }
+
+  .travel {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registry {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 780px) {
   #rsvp-big-button {
     font-size: 16px;
