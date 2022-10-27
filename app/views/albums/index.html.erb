@@ -1,0 +1,11 @@
+<h1>Albums</h1>
+
+<div id="albums">
+  <% @albums.each do |album| %>
+    <%= album.title %>
+    <%= album.description %>
+    <p><%= link_to "Show this album", album_path(album) %></p>
+  <% end %>
+</div>
+
+<%= link_to "New album", new_album_path %>
