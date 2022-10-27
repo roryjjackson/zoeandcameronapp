@@ -78,7 +78,6 @@ class AlbumsController < ApplicationController
   def create
     @album = Album.new(album_params)
     if @album.save
-      # raise
       redirect_to albums_path
     else
       render :new, status: :unprocessable_entity
@@ -91,11 +90,7 @@ class AlbumsController < ApplicationController
 
   def update
     @album = Album.find(params[:id])
-    # new_photos = album_params[:photos]
-    # @album.photos.attach(new_photos)
     @album.update(album_params)
-
-    # @album.photos.push(album_params[:photos])
     redirect_to album_path(@album)
   end
 
@@ -106,10 +101,6 @@ class AlbumsController < ApplicationController
   end
 
   private
-
-  # def set_album
-  #   @album = Album.find(params[:id])
-  # end
 
   def album_params
     params.require(:album).permit(:title, :description, photos: [])
