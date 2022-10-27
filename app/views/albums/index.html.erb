@@ -1,10 +1,26 @@
-<h1>Albums</h1>
-<%= link_to "New album", new_album_path %>
-
-<div id="albums">
-  <% @albums.each do |album| %>
-    <%= album.title %>
-    <%= album.description %>
-    <p><%= link_to "Show this album", album_path(album) %></p>
-  <% end %>
+<div class="album-index">
+  <div class="album-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg);">
+    <a href="/"><h2>HOME</h2></a>
+    <%# <div class="create-button">
+      <a href="/albums/new"><p id="create-album-btn">Create Album</p></a>
+    </div> %>
+  </div>
+  <div id="albums" >
+    <%# <div id="albums" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1664472082/squjp1eq1gkizrzbqxn9.jpg);"> %>
+    <% @albums.each do |album| %>
+      <%= link_to album_path(album) do %>
+        <div class="album-card-info">
+          <div class="album-card-img">
+            <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg" alt="" id="album-card-img">
+            <%# <%= cl_image_tag album.photos[0].key, id: "album-card-img"  %>
+          </div>
+          <div class="album-card-text">
+            <h1>Our shared photo album</h1>
+            <h2>Feel free to upload your own pictures!</h2>
+            <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they're of someone whos had too many wines, or a romantic couples photo in the rain, add them all to this album and we can all enjoy it!</p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>
