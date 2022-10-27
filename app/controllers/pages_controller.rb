@@ -3,4 +3,5 @@ class PagesController < ApplicationController
   # def home
   # end
   # http_basic_authenticate_with :password => "Scotland2023"
+
 end
