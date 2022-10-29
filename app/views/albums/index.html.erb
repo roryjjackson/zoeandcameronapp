@@ -1,26 +1,4 @@
-<div class="album-index">
-  <div class="album-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg);">
-    <a href="/"><h2>HOME</h2></a>
-    <%# <div class="create-button">
-      <a href="/albums/new"><p id="create-album-btn">Create Album</p></a>
-    </div> %>
-  </div>
-  <div id="albums" >
-    <%# <div id="albums" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1664472082/squjp1eq1gkizrzbqxn9.jpg);"> %>
-    <% @albums.each do |album| %>
-      <%= link_to album_path(album) do %>
-        <div class="album-card-info">
-          <div class="album-card-img">
-            <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg" alt="" id="album-card-img">
-            <%# <%= cl_image_tag album.photos[0].key, id: "album-card-img"  %>
-          </div>
-          <div class="album-card-text">
-            <h1>Our shared photo album</h1>
-            <h2>Feel free to upload your own pictures!</h2>
-            <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-</div>
+
+
+<h2>Our photo album</h2>
+<p>Feel free to add your own memories to our album!</p>
