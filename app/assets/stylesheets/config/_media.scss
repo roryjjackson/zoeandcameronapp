@@ -191,29 +191,29 @@
     align-items: center;
   }
 
-  .album-list {
-      display: grid;
-      grid-template-columns:  1fr 1fr ;
-      grid-gap: 30px;
-      width: 100%;
-      // margin: 30px;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-      margin-top: 20px;
-  }
-
-  // .album-list-box {
-  //   display: flex;
-  //   justify-content: center;
+  // .album-list {
+  //     display: grid;
+  //     grid-template-columns:  1fr 1fr ;
+  //     grid-gap: 30px;
+  //     width: 100%;
+  //     // margin: 30px;
+  //     justify-content: center;
+  //     align-items: center;
+  //     margin-bottom: 30px;
+  //     margin-top: 20px;
   // }
 
-  .album-list-photo {
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    // width: 240px !important;
-    // height: 206px !important;
-    object-fit: cover;
-  }
+  // // .album-list-box {
+  // //   display: flex;
+  // //   justify-content: center;
+  // // }
+
+  // .album-list-photo {
+  //   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  //   // width: 240px !important;
+  //   // height: 206px !important;
+  //   object-fit: cover;
+  // }
 }
 
 
@@ -390,29 +390,29 @@
     display: none;
   }
 
-  .album-list {
-    display: grid;
-    grid-template-columns:  1fr 1fr ;
-    grid-gap: 30px;
-    width: 100%;
-    // margin: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-
-  // .album-list-box {
-  //   display: flex;
+  // .album-list {
+  //   display: grid;
+  //   grid-template-columns:  1fr 1fr ;
+  //   grid-gap: 30px;
+  //   width: 100%;
+  //   // margin: 30px;
   //   justify-content: center;
+  //   align-items: center;
+  //   margin-bottom: 30px;
+  //   margin-top: 20px;
   // }
 
-  .album-list-photo {
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    // width: 240px !important;
-    // height: 206px !important;
-    object-fit: cover;
-  }
+  // // .album-list-box {
+  // //   display: flex;
+  // //   justify-content: center;
+  // // }
+
+  // .album-list-photo {
+  //   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  //   // width: 240px !important;
+  //   // height: 206px !important;
+  //   object-fit: cover;
+  // }
 }
 
 
