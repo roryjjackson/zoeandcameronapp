@@ -1,9 +1,12 @@
 <h1>Editing album</h1>
 
-<%= render "form", album: @album %>
-
-
+<%= simple_form_for(@album) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <%= f.button :submit %>
+  </div>
+<% end %>
 
 <div>
-  <%= link_to "Back to albums", albums_path %>
+  <%= link_to "Back to albums", album_path %>
 </div>
