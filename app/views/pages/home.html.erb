@@ -258,17 +258,18 @@
 </div>
 <a href="/albums/20">
   <div id="albums" >
-    <div class="album-card-info">
-      <div class="album-card-img">
+    <%# <div class="album-card-info"> %>
+      <%# <div class="album-card-img">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg" alt="" id="album-card-img">
-        <%# <%= cl_image_tag album.photos[0].key, id: "album-card-img"  %>
+      </div> %>
+      <div class="album-card-text" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg); background-size: 500px; background-position: center;">
+        <div class="album-card-text-content">
+          <h1>SHARED PHOTO ALBUM</h1>
+          <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
+          <h2>Feel free to upload your own pictures!</h2>
+        </div>
       </div>
-      <div class="album-card-text">
-        <h1>Our shared photo album</h1>
-        <h2>Feel free to upload your own pictures!</h2>
-        <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
-      </div>
-    </div>
+    <%# </div> %>
   </div>
 </a>
 <div class="footer">
