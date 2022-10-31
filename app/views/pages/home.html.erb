@@ -248,30 +248,29 @@
   </div>
   <div class="registry">
     <div class="regsitry-info">
+      <%# <h2>PHOTO ALBUMS</h2> %>
       <h2>Registry</h2>
       <p>COMING SOON</p>
-      <h2>PHOTO ALBUMS</h2>
-      <a href="/albums/20">
-        <div id="albums" >
-          <div class="album-card-info">
-            <div class="album-card-img">
-              <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg" alt="" id="album-card-img">
-              <%# <%= cl_image_tag album.photos[0].key, id: "album-card-img"  %>
-            </div>
-            <div class="album-card-text">
-              <h1>Our shared photo album</h1>
-              <h2>Feel free to upload your own pictures!</h2>
-              <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <p>To view photos from the weekend, and to put your own photos into an album to share with everyone else, click here!</p>
+      <%# <p>To view photos from the weekend, and to put your own photos into an album to share with everyone else, click here!</p> %>
       <%# <p>We will soon have an album accessible by all, where you can upload any photos from the day, as well as view any taken by others!</p> %>
     </div>
   </div>
 </div>
+<a href="/albums/20">
+  <div id="albums" >
+    <div class="album-card-info">
+      <div class="album-card-img">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg" alt="" id="album-card-img">
+        <%# <%= cl_image_tag album.photos[0].key, id: "album-card-img"  %>
+      </div>
+      <div class="album-card-text">
+        <h1>Our shared photo album</h1>
+        <h2>Feel free to upload your own pictures!</h2>
+        <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
+      </div>
+    </div>
+  </div>
+</a>
 <div class="footer">
   <a id="schedule">
     <p>Built by the boss man bro RORY JACKSON</p>
