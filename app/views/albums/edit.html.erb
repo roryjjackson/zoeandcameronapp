@@ -1,20 +1,23 @@
 <div class="album-index">
   <div class="album-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg);">
     <div class="home-text">
-      <a href="/albums/1"><h2>Back</h2></a>
+      <%= link_to "Back", album_path(@photo_album), id: "edit-back-button" %>
+      <%# <a href="/albums/1"><h2>Back</h2></a> %>
     </div>
   </div>
 </div>
-<div class="add-photo-area">
-  <h1>Add your own photos to our album!</h1>
-  <div class="add-photo-container">
-    <div class="add-photo-bar">
-      <%= simple_form_for(@album) do |f| %>
-        <div class="form-inputs">
-          <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-          <%= f.button :submit, id: "update-album-btn" %>
-        </div>
-      <% end %>
+<div class="add-photo-zone">
+  <div class="add-photo-area">
+    <h1>Add your own photos to our album!</h1>
+    <div class="add-photo-container">
+      <div class="add-photo-bar">
+        <%= simple_form_for(@album) do |f| %>
+          <div class="form-inputs">
+            <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+            <%= f.button :submit, id: "update-album-btn" %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
