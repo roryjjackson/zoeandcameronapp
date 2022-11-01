@@ -1,22 +1,22 @@
-<div class="album-index">
+<%# <div class="album-index">
   <div class="album-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg);">
     <div class="home-text">
       <a href="/"><h2>HOME</h2></a>
     </div>
   </div>
 </div>
-<div class="edit">
-  <a href="/albums/20/edit"><h2 id="add-photo-button">Add Photos</h2></a>
-</div>
-<div class="album-list">
-  <% @album.photos.each do |photo| %>
-    <div class="album-list-box">
-      <%= cl_image_tag photo.key, class: "album-list-photo" %>
+<div id="albums" >
+  <div class="album-card-text" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg); background-size: 500px; background-position: center;">
+    <div class="album-card-text-content">
+      <h1>SHARED PHOTO ALBUM</h1>
+      <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
+      <h2>Feel free to upload your own pictures!</h2>
     </div>
-  <% end %>
+  </div>
 </div>
 <div class="footer">
   <a id="schedule">
     <p>Built by the boss man bro RORY JACKSON</p>
   </a>
-</div>
+</div> %>
+<p>index</p>

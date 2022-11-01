@@ -8,6 +8,7 @@ class AlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
+    @photo_album = Album.first
   end
 
   def new
@@ -26,6 +27,8 @@ class AlbumsController < ApplicationController
   def edit
     # @album = Album.find(params[:id])
     @album = Album.first
+    @photo_album = Album.first
+
   end
 
   def update

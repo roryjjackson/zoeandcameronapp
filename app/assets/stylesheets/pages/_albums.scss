@@ -251,6 +251,16 @@ div.create-button {
   padding: 20px;
   // margin: 30px;
   width: 220px;
+  text-align: center;
+}
+
+#edit-back-button {
+  color: white;
+}
+
+#edit-back-button:hover {
+  color: white;
+  opacity: 0.5;
 }
 
 .add-photo-bar {
@@ -273,7 +283,17 @@ div.create-button {
   // top: 300px;
   // bottom: 80px;
   // height: 100%;
-  margin: 100px 40px 100px 40px;
+  margin: 40px 40px 40px 40px;
+  // border: solid black 1px;
+  padding: 50px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 800px;
+}
+
+.add-photo-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #update-album-btn {
