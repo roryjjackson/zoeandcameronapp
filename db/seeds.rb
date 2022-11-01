@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Album.destroy_all
-# Rsvps.destroy_all
+Rsvp.destroy_all
 
 puts "everything destroyed"
 
