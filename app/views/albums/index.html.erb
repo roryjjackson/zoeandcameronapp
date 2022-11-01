@@ -1,4 +1,22 @@
-
-
-<h2>Our photo album</h2>
-<p>Feel free to add your own memories to our album!</p>
+<div class="album-index">
+  <div class="album-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg);">
+    <div class="home-text">
+      <a href="/"><h2>HOME</h2></a>
+    </div>
+  </div>
+</div>
+<div class="edit">
+  <a href="/albums/20/edit"><h2 id="add-photo-button">Add Photos</h2></a>
+</div>
+<div class="album-list">
+  <% @album.photos.each do |photo| %>
+    <div class="album-list-box">
+      <%= cl_image_tag photo.key, class: "album-list-photo" %>
+    </div>
+  <% end %>
+</div>
+<div class="footer">
+  <a id="schedule">
+    <p>Built by the boss man bro RORY JACKSON</p>
+  </a>
+</div>
