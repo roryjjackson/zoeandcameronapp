@@ -13,6 +13,8 @@ puts "everything destroyed"
 
 puts "creating album"
 
+require "open-uri"
+
 album1 = Album.create(title: "Shared Photo Album", description: "All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!")
 
 file = URI.open("https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg")
