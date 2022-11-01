@@ -90,7 +90,43 @@
   // background-color: white;
   max-width: 600px;
   object-fit: cover;
+}
 
+@media only screen and (min-width: 1px) and (max-width: 450px) {
+  .album-card-text p {
+    display: none;
+  }
+
+  .album-card-text h1 {
+    font-size: 20px;
+  }
+
+  .album-card-text h2 {
+    display: none;
+  }
+
+  .album-card-text-content {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 760px) {
+  .album-card-text p {
+    display: none;
+  }
+
+  .album-card-text h1 {
+    font-size: 20px;
+    margin: 40px;
+  }
+
+  // .album-card-text h2 {
+
+  // }
+
+  .album-card-text-content {
+    padding: 30px;
+  }
 }
 
 #create-album-btn {
