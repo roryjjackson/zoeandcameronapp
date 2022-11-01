@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" unless current_page?(new_rsvp_path) || current_page?(rsvps_path) || current_page?(albums_path) || current_page?("/albums/1") || current_page?("/albums/1/edit")%>
+    <%= render "shared/navbar" unless current_page?(new_rsvp_path) || current_page?(rsvps_path) || current_page?(albums_path) || current_page?(edit_album_path(@photo_album)) || current_page?(album_path(@photo_album))%>
     <%# || current_page?(albums_path) || current_page?(album_path) || current_page?(new_album_path) %>
     <%= render "shared/flashes" %>
     <p class="notice"><%= notice %></p>
