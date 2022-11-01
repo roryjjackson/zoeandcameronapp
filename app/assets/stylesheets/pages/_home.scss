@@ -92,10 +92,12 @@ a:hover {
   color: rgb(0, 145, 0);
   text-align: center;
   font-size: 32px;
+  border: solid rgb(0, 145, 0) 1px;
 }
 
 #rsvp-big-button:hover {
-  color: limegreen;
+  color: black;
+  border: solid black 1px;
 }
 
 .one {
@@ -154,7 +156,7 @@ a:hover {
 }
 
 p#demo {
-  font-size: 23px;
+  font-size: 35px;
 }
 
 .rsvp-area {
