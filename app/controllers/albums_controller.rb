@@ -1,5 +1,5 @@
 class AlbumsController < ApplicationController
-  http_basic_authenticate_with name: "zoe", password: "scotland2023", except: :index
+  # http_basic_authenticate_with name: "zoe", password: "scotland2023"
 
   def index
     @albums = Album.all
