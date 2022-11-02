@@ -15,6 +15,9 @@
     <div class="album-list-box">
       <%= cl_image_tag photo.key, class: "album-list-photo" %>
     </div>
+    <%# <div class="delete image">
+      <%= link_to "Remove", albums_path(photo), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+    <%# </div> %>
   <% end %>
 </div>
 <div class="footer">

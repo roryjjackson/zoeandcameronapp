@@ -39,9 +39,10 @@ class AlbumsController < ApplicationController
   end
 
   def destroy
+    @photo_album = Album.first
     @album = Album.find(params[:id])
     @album.destroy
-    redirect_to albums_path, status: :see_other
+    redirect_to album_path(@album), status: :see_other
   end
 
   private
