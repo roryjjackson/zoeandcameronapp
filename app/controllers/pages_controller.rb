@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   # http_basic_authenticate_with :password => "Scotland2023"
   def home
     @photo_album = Album.first
+    # @rsvp_link = ALbum.last
   end
 end
