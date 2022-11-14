@@ -1,4 +1,6 @@
 class RsvpsController < ApplicationController
+
+
   def index
     # @rsvps = Rsvp.where(wedding_id: @wedding.id)
     # @rsvp_yes = @rsvps.where(attendance: "Yes").order("created_at desc")

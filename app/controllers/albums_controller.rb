@@ -27,9 +27,8 @@ class AlbumsController < ApplicationController
 
   def edit
     # @album = Album.find(params[:id])
-    @album = Album.first
+    @album = Album.first.id
     @photo_album = Album.first
-
   end
 
   def update

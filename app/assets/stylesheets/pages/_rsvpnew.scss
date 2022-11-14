@@ -1,5 +1,13 @@
 .rsvp-form-body {
-  margin: 50px;
+  padding: 50px;
+  width: 50%;
+}
+
+.rsvp-new-img {
+  // width: 50%;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .rsvp-form {
@@ -51,4 +59,14 @@ legend.col-form-label.pt-0 {
 
 .rsvp-data {
   text-align: center;
+}
+
+.rsvp-card-product {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  // height: 600px;
+  padding: 0 50px 50px 50px;
+  margin-bottom: 20px;
+  justify-content: center;
 }

@@ -1,15 +1,18 @@
-<div class="rsvp-form-body">
-  <a href="/"><h3>Return Home</h3></a>
-  <h2 class="reply-text" id="rsvp-title" style="margin: 20px;">Please fill the form out <strong>ONCE</strong> per attendee</h2>
-  <div class="rsvp-form">
-    <%= simple_form_for(@rsvp) do |f| %>
-      <%= f.input :name, :label => "Please write your FULL name" %>
-      <%= f.input :attendance, as: :radio_buttons, collection: [['Yes', "Yes!! I'm coming!"], ['No', "No, sadly I can't come 😢"]], label_method: :second, value_method: :first %>
-      <%= f.input :song, :label => "Name a song that we can add to our wedding playlist!" %>
-      <%= f.input :diet, :label => "Any dietary requirements?" %>
-      <div id="rsvp-confirm">
-        <%= f.submit "Complete the form", class: "rsvp_button btn-flat" %>
-      </div>
-    <% end %>
+<div class="rsvp-card-product">
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1668425666/WhatsApp_Image_2022-11-09_at_11.37.09_PM_w2epfo.jpg" alt="" class="rsvp-new-img">
+  <div class="rsvp-form-body">
+    <a href="/"><h3>Return Home</h3></a>
+    <h2 class="reply-text" id="rsvp-title" style="margin: 20px;">Please fill the form out <strong>ONCE</strong> per attendee</h2>
+    <div class="rsvp-form">
+      <%= simple_form_for(@rsvp) do |f| %>
+        <%= f.input :name, :label => "Please write your FULL name" %>
+        <%= f.input :attendance, as: :radio_buttons, collection: [['Yes', "Yes!! I'm coming!"], ['No', "No, sadly I can't come 😢"]], label_method: :second, value_method: :first %>
+        <%= f.input :song, :label => "Name a song that we can add to our wedding playlist!" %>
+        <%= f.input :diet, :label => "Any dietary requirements?" %>
+        <div id="rsvp-confirm">
+          <%= f.submit "Complete the form", class: "rsvp_button btn-flat" %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
