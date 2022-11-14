@@ -10,4 +10,7 @@ class ApplicationController < ActionController::Base
   #   devise_parameter_sanitizer.permit(:account_update, keys: [:first_name, :last_name])
   # end
   # http_basic_authenticate_with :password => "Scotland2023"
+  # http_basic_authenticate_with :name => "guest", :password => "scotland2023"
+
+
 end

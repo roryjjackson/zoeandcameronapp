@@ -1,5 +1,6 @@
 class AlbumsController < ApplicationController
   # http_basic_authenticate_with name: "zoe", password: "scotland2023"
+  http_basic_authenticate_with :name => "guest", :password => "scotland2023"
 
   def index
     @albums = Album.all
@@ -27,7 +28,7 @@ class AlbumsController < ApplicationController
 
   def edit
     # @album = Album.find(params[:id])
-    @album = Album.first.id
+    @album = Album.first
     @photo_album = Album.first
   end
 
