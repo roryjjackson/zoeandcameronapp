@@ -70,3 +70,39 @@ legend.col-form-label.pt-0 {
   margin-bottom: 20px;
   justify-content: center;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 649px) {
+  .rsvp-form-body {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .rsvp-new-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  .rsvp-new-img {
+    display: none;
+  }
+
+  .rsvp-form-body {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+  .rsvp-form-body {
+    padding: 50px;
+    width: 50%;
+  }
+
+  .rsvp-new-img {
+    // width: 50%;
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+}

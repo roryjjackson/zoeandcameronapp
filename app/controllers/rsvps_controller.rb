@@ -1,5 +1,5 @@
 class RsvpsController < ApplicationController
-
+  http_basic_authenticate_with :name => "guest", :password => "scotland2023"
 
   def index
     # @rsvps = Rsvp.where(wedding_id: @wedding.id)
@@ -48,7 +48,7 @@ class RsvpsController < ApplicationController
     # @wedding = Wedding.find(params[:wedding_id])
     # @rsvp.wedding_id = @wedding.id
     if @rsvp.save
-      redirect_to root_path
+      redirect_to root_path, notice: "Thank you for filling out our form!"
     else
       render :new, status: :unprocessable_entity
     end
