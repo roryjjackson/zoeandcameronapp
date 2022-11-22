@@ -1,11 +1,21 @@
 <a id="home">
-  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg" alt="" class="five">
+<%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1669048233/zoe_header_pic_q6rlbj.jpg" alt="" class="five"> %>
+  <%# <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg" alt="" class="five" > %>
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015811/DSC02450_dmkao8.jpg" alt="" class="five" >
+
+
 </a>
 <div class="welcome-info">
   <h1>The Jackson-Addletons</h1>
   <p>Welcome! We may already be legally wed, but that doesn't mean we're missing the opportunity to celebrate with our nearest and dearest!</p>
   <p>Suit up, boot up, and get ready for a Scottish throwdown!</p>
   <p id="demo"></p>
+
+  <a id="rsvp">
+  </a>
+  <a href="https://www.thebyreatinchyra.co.uk/" target="_blank"><h2>25th November 2023 | The Byre at Inchyra</h2><h3>Glencarse, Perth PH2 7LU, UK</h3>
+  </a>
+</div>
   <script>
     var countDownDate = new Date("Nov 23, 2023 12:00:00").getTime();
     var x = setInterval(function() {
@@ -24,12 +34,6 @@
       }
     }, 1000);
   </script>
-
-  <a id="rsvp">
-  </a>
-  <a href="https://www.thebyreatinchyra.co.uk/" target="_blank"><h2>25th November 2023 | The Byre at Inchyra</h2><h3>Glencarse, Perth PH2 7LU, UK</h3>
-  </a>
-</div>
 <div class="rsvp-area">
   <div class="area-image">
     <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015815/DSC02516_hw35a6.jpg" alt="" class="six">
@@ -42,25 +46,25 @@
         <a href="/rsvps/new"><p id="rsvp-big-button">RSVP</p></a>
       </div>
       <a id="details">
+      </a>
         <div class="rsvp-table-btn">
           <%= link_to "RSVP replies", rsvps_path, id: "rsvp-table-button" %>
         </div>
-      </a>
     </div>
   </div>
 </div>
 
 <div class="details-area">
   <div class="details-area-info">
-    <h2>The details</h2>
-    <h4>Dress code</h4>
-    <p>Formal and Fancy (be prepared for potentially frosty weather)</p>
-    <p><strong>* Umbrellas strongly advised *</strong></p>
-    <p>Parking - <a href="https://www.thebyreatinchyra.co.uk/getting-here/information-for-guests/" target="_blank" id="parking-link">Click Here</a></p>
-    <%# <%= link_to "Click here", https://www.thebyreatinchyra.co.uk/getting-here/information-for-guests/ %>
+    <h1>The Details</h1>
+    <h4>Dress Code</h4>
+    <p>Formal & Fancy (be prepared for potentially frosty weather)</p>
+    <p><strong>* umbrellas strongly advised *</strong></p>
+    <p>Venue details & access - <a href="https://www.thebyreatinchyra.co.uk/getting-here/information-for-guests/" target="_blank" id="parking-link">Click Here</a></p>
     <p>ADULT ONLY AFFAIR</p>
-    <p>There will be food and drinks at reception, we've covered some of the costs, but come prepared if you fancy a cocktail!</p>
+    <p>Mealtimes & toasts are on us, party drinks are on you.*</p>
     <p>Any Questions? zoeandcam2023@gmail.com</p>
+    <p id="side-note">* If you prefer something a little stronger than vino, we will have a semi-subsidised bar that accepts all major debit / credit cards. No naughty hipflasks or outside beverages please - it interferes with licensing and will shut down our throwdown!</p>
   </div>
   <div class="area-image">
     <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02500_wn01f3.jpg" alt="" class="two">
@@ -94,7 +98,7 @@
         </div>
       </div>
       <div class="vip">
-        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666112212/zoe2_xlnz0u.jpg" alt="" class="avatar">
+        <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1669048758/orla_zoes_website_gkasnw.jpg" alt="" class="avatar">
         <div class="card-info">
           <h4>Orla Jackson</h4>
           <h5>Little Sis</h5>
@@ -158,21 +162,21 @@
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1668424478/WhatsApp_Image_2022-11-12_at_7.51.16_PM_psu7rj.jpg" alt="" class="avatar">
         <div class="card-info">
           <h4>Henry Faber</h4>
-          <h5>The Mancunian</h5>
+          <h5>The semi-hot one</h5>
         </div>
       </div>
       <div class="vip">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666705917/Jay_Favaro_zoeandcam_t02qsn.jpg" alt="" class="avatar">
         <div class="card-info">
           <h4>Jay Favaro</h4>
-          <h5>The Mancunian</h5>
+          <h5>The semi-athletic one</h5>
         </div>
       </div>
       <div class="vip">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1668424478/WhatsApp_Image_2022-11-12_at_7.51.35_PM_mqsefr.jpg" alt="" class="avatar">
         <div class="card-info">
           <h4>Matthew Farkas</h4>
-          <h5>The Mancunian</h5>
+          <h5>The semi-large one</h5>
         </div>
       </div>
       <div class="vip">
@@ -193,20 +197,23 @@
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1668424478/WhatsApp_Image_2022-11-12_at_7.50.48_PM_akqwdg.jpg" alt="" class="avatar">
         <div class="card-info">
           <h4>Daniel Sutherland</h4>
-          <h5>"Suds"</h5>
+          <h5>Suds</h5>
         </div>
       </div>
       <div class="vip">
         <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1668424478/WhatsApp_Image_2022-11-12_at_7.51.05_PM_naqhvz.jpg" alt="" class="avatar">
         <div class="card-info">
           <h4>Nick Thrasher</h4>
-          <h5>The Mancunian</h5>
+          <h5>The very tall one</h5>
         </div>
       </div>
     </div>
   </div>
 </div>
-<img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1666122809/zoe_group_photo_wedding_kxtjkn.jpg" alt="" class="four">
+<div class="image-break">
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1669048233/zoe_header_pic_q6rlbj.jpg" alt="" class="four">
+  <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1669048522/zoe_header_pic_2_nsu9ml.jpg" alt="" class="nine">
+</div>
 <a id="schedule">
 </a>
 <div class="schedule-area">
@@ -217,17 +224,18 @@
       <p>There are ample accommodation options nearby ranging from Premier and Holiday Inns to 5* resorts and self-catering cottages.</p>
       <p>The venue has a list of local suggestions, but you should also be able to find plenty of options via booking.com or a good old fashioned Google search.</p>
       <p></p><a href="https://www.thebyreatinchyra.co.uk/place-weddings-perthshire/places-to-stay/" target="_blank"><p>Click here</p></a>
+      <p>If you're feeling brave, the estate offers free on-site camping with use of the bathroom facilities. Please do let us know if you're interested!</p>
     </div>
   </div>
   <div class="schedule">
       <h1>Order of the day</h1>
     <div class="schedule-list">
       <div class="schedule-event">
-        <h5>1:00pm | Arrival and welcoming of guests 👋🏼</h5>
+        <h5>1:00pm | Arrival of guests 👋🏼</h5>
       </div>
       <p>~</p>
       <div class="schedule-event">
-        <h5>2:00pm | Ceremony 🕊</h5>
+        <h5>1:45pm | Ceremony 🕊</h5>
       </div>
       <p>~</p>
       <div class="schedule-event">
@@ -235,11 +243,11 @@
       </div>
       <p>~</p>
       <div class="schedule-event">
-        <h5>5:00pm | Wedding breakfast 🐷</h5>
+        <h5>4:00pm | Wedding breakfast 🐷</h5>
       </div>
       <p>~</p>
       <div class="schedule-event">
-        <h5>7:00pm | Party and evening guests arrival 🥳</h5>
+        <h5>7:00pm | Evening guests arrival 🥳</h5>
       </div>
       <p>~</p>
       <div class="schedule-event">
@@ -249,25 +257,12 @@
   </div>
   <div class="registry">
     <div class="regsitry-info">
-      <%# <h2>PHOTO ALBUMS</h2> %>
       <h2>Registry</h2>
       <p>COMING SOON</p>
-      <%# <p>To view photos from the weekend, and to put your own photos into an album to share with everyone else, click here!</p> %>
-      <%# <p>We will soon have an album accessible by all, where you can upload any photos from the day, as well as view any taken by others!</p> %>
     </div>
   </div>
 </div>
-<%# <%= link_to album_path(@photo_album) do %>
-  <%# <div id="albums" >
-    <div class="album-card-text" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfipoufmj/image/upload/v1666015814/DSC02519_gufztr.jpg); background-size: 500px; background-position: center;">
-      <div class="album-card-text-content">
-        <h1>SHARED PHOTO ALBUM</h1>
-        <p>All these photographs will be hand selected to go into our scrap book for after the wedding, so whether they'll make us howl with laughter, shed a few tears or smile fondly, add as many as you can and we can all reminisce!</p>
-        <h2>Feel free to upload your own pictures!</h2>
-      </div>
-    </div>
-  </div> %>
-<%# <% end %>
 <div class="footer">
-    <p>Built by the boss man bro RORY JACKSON</p>
+    <p>Built by the boss man bro</p>
+    <img src="https://res.cloudinary.com/dfipoufmj/image/upload/v1669115799/image-from-rawpixel-id-2615398-png_ba0qxs.png" alt="" class="ten">
 </div>

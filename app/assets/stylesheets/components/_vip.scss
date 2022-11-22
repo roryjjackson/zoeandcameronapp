@@ -17,6 +17,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 12px;
+  // background-image: url(https://res.cloudinary.com/dfipoufmj/image/upload/v1669116902/image-from-rawpixel-id-3485365-png_zybmqv.png);
+  // background-position: unset;
+  // background-size: 300px;
+  // background-repeat: no-repeat;
+  // opacity: 0.6;
 }
 
 .bridesmaids {
@@ -34,6 +39,8 @@
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
 
 .groomsmen {
@@ -52,6 +59,8 @@
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
 
 .vip {

@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1px) and (max-width: 450px) {
+  body {
+    background-size: 514px;
+    background-position: 144px;
+  }
   .nav-link {
     // display: none;
     font-size: 8px;
@@ -163,7 +167,6 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    border: solid black 1px;
     padding: 10px;
   }
 
@@ -191,32 +194,12 @@
     justify-content: center;
     align-items: center;
   }
-
-
-
-  // .album-list {
-  //     display: grid;
-  //     grid-template-columns:  1fr 1fr ;
-  //     grid-gap: 30px;
-  //     width: 100%;
-  //     // margin: 30px;
-  //     justify-content: center;
-  //     align-items: center;
-  //     margin-bottom: 30px;
-  //     margin-top: 20px;
-  // }
-
-  // // .album-list-box {
-  // //   display: flex;
-  // //   justify-content: center;
-  // // }
-
-  // .album-list-photo {
-  //   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  //   // width: 240px !important;
-  //   // height: 206px !important;
-  //   object-fit: cover;
-  // }
+  .nine {
+    display: none;
+  }
+  .four {
+    width: 100%;
+  }
 }
 
 
@@ -227,6 +210,10 @@
 
 
 @media only screen and (min-width: 451px) and (max-width: 1000px) {
+  body {
+    background-size: 700px;
+    background-position: 400px;
+  }
   .welcome-info {
     margin: 15px;
   }
@@ -281,7 +268,7 @@
      font-family: 'Cormorant Garamond', serif;
 
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   h1 {
@@ -341,7 +328,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    border: solid black 1px;
+    // border: solid black 1px;
     padding: 14px;
   }
 
@@ -378,6 +365,12 @@
     height: 100%;
   }
 
+  .nine {
+    display: none;
+  }
+  .four {
+    width: 100%;
+  }
   .album-card-text p {
     display: none;
   }
@@ -393,215 +386,4 @@
   .album-card-text-content {
     padding: 30px;
   }
-
-  // .album-list {
-  //   display: grid;
-  //   grid-template-columns:  1fr 1fr ;
-  //   grid-gap: 30px;
-  //   width: 100%;
-  //   // margin: 30px;
-  //   justify-content: center;
-  //   align-items: center;
-  //   margin-bottom: 30px;
-  //   margin-top: 20px;
-  // }
-
-  // // .album-list-box {
-  // //   display: flex;
-  // //   justify-content: center;
-  // // }
-
-  // .album-list-photo {
-  //   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  //   // width: 240px !important;
-  //   // height: 206px !important;
-  //   object-fit: cover;
-  // }
 }
-
-
-
-
-
-
-// @media (max-width: 1000px) {
-//   .album-banner {
-//     background-size: cover;
-//     background-position: center;
-//     // padding: 150px 0;
-//     height: 300px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .album-banner h2 {
-//     margin: 0;
-//     // opacity: .7;
-//     color: white;
-//     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-//     font-size: 32px;
-//     font-weight: bold;
-//   }
-//   .album-banner h2:hover {
-//     margin: 0;
-//     opacity: .5;
-//     color: white;
-//     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-//     font-size: 32px;
-//     font-weight: bold;
-//   }
-
-//   // .album-banner h1 {
-//   //   font-size: 50px;
-//   //   color: white;
-//   //   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-//   // }
-
-//   .album-banner h5 {
-//     font-size: 30px;
-//     color: white;
-//     opacity: .7;
-//     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-//   }
-
-//   .album-card-info {
-//     display: flex;
-//     // grid-template-columns: 1fr;
-//     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//     width: 700px;
-//     height: 420px;
-//     // display: flex;
-//     // justify-content: center;
-//   }
-
-//   .album-card-img {
-//     align-items: center;
-//     justify-content: center;
-//     display: flex;
-//     // margin: 20px;
-//   }
-
-//   .album-card-text-content {
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
-//     // display: flex;
-//     // width: 580px;
-//     // height: 420px;
-//     overflow: hidden;
-//     background-color: white;
-//     padding: 20px;
-//   }
-
-//   .album-card-text p {
-//     font-size: 16px;
-//   }
-
-//   .album-card-text h1 {
-//     font-size: 36px;
-//   }
-
-//   .album-card-text h2 {
-//     font-size: 22px;
-//   }
-
-//   .album-card-text {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 420px;
-//     height: 420px;
-//     background-color: white;
-
-//   }
-
-//   #album-card-img {
-//     height: 420px;
-//     width: 280px;
-//     object-fit: cover;
-//     align-items: center;
-//     justify-content: center;
-//     display: flex;
-//     position: relative;
-//     top: 0px;
-//   }
-
-//   #create-album-btn {
-//     margin: none;
-//     font-size: 50px;
-//   }
-
-//   div.create-button {
-//     height: 50px;
-//   }
-
-//   .album-index {
-//     // background-color: #e5e5f7;
-//     // opacity: 0.8;
-//     // background-image: linear-gradient(45deg, #444cf7 50%, #e5e5f7 50%);
-//     // background-size: 10px 10px;
-//     margin-bottom: 20px;
-//   }
-
-//   .album-index a {
-//     // margin: 20px;
-//     justify-content: center;
-//   }
-
-//   #albums {
-//     // display: grid;
-//     // grid-template-columns: 1fr 1fr ;
-//     // grid-gap: 30px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100%;
-//     // padding: 30px 0 30px 0 ;
-//     margin-bottom: 30px;
-//   }
-
-//   #albums a {
-//   display: flex;
-//   }
-
-//   .album-list {
-//     display: grid;
-//     grid-template-columns:  1fr 1fr 1fr 1fr;
-//     grid-gap: 30px;
-//     width: 100%;
-//     // margin: 30px;
-//     justify-content: center;
-//     align-items: center;
-//     margin-bottom: 30px;
-//     margin-top: 20px;
-//   }
-
-//   .album-list-box {
-//     display: flex;
-//     justify-content: center;
-//   }
-
-//   .album-list-photo {
-//     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//     width: 280px;
-//     height: 240px;
-//     object-fit: cover;
-//   }
-
-//   .edit {
-//     display: flex;
-//     justify-content: center;
-//   }
-
-//   #add-photo-button {
-//     font-size: 30px;
-//     // margin: 50px;
-//     // font-weight: bold;
-//     border: solid black 1px;
-//     padding: 20px;
-//     // margin: 30px;
-//     width: 220px;
-
-//   }
-// }
