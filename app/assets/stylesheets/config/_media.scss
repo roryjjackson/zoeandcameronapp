@@ -5,7 +5,7 @@
   }
   .nav-link {
     // display: none;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   h2#rsvp-title.reply-text {
@@ -20,26 +20,26 @@
     margin: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 14px;
   }
 
   #rsvp-big-button {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   #rsvp-table-button {
-    font-size: 8px;
+    font-size: 12px;
     border: none;
   }
 
   .rsvp-area {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 14px;
   }
 
   .rsvp-area-info {
-    margin-top: 10px;
+    margin-top: 14px;
   }
 
   a {
@@ -53,13 +53,13 @@
   h4 {
      font-family: 'Cormorant Garamond', serif;
 
-    font-size: 10px;
+    font-size: 14px;
   }
 
   h5 {
      font-family: 'Cormorant Garamond', serif;
 
-    font-size: 8px;
+    font-size: 12px;
     text-align: center;
   }
 
@@ -67,7 +67,7 @@
      font-family: 'Cormorant Garamond', serif;
 
     text-align: center;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   p#demo {
