@@ -1,12 +1,13 @@
 .footer {
   width: 100%;
-  background-color: #f4f4f4;
+  // background-color: #f4f4f4;
+  background-color: white;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: solid rgba(0, 0, 0, 0.254) 1px;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // border-top: solid rgba(0, 0, 0, 0.254) 1px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.053);
   position: static;
   bottom: 0px;
 }

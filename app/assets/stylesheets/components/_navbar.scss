@@ -10,12 +10,12 @@
   background: transparent;
   width: 100%;
   height: 80px;
-  border-bottom: solid rgba(0, 0, 0, 0.254) 1px;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // border-bottom: solid rgba(0, 0, 0, 0.091) 1px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.053);
   z-index: 5;
-  // color: white;
-  background-color: #f4f4f4;
-
+  color: rgba(0, 0, 0, 0.657);
+  // background-color: #f4f4f4;
+  background-color: white;
 }
 
 .log-item:hover {
