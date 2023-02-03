@@ -2,15 +2,6 @@ class RsvpsController < ApplicationController
   http_basic_authenticate_with :name => "guest", :password => "scotland2023"
 
   def index
-    # @rsvps = Rsvp.where(wedding_id: @wedding.id)
-    # @rsvp_yes = @rsvps.where(attendance: "Yes").order("created_at desc")
-    # @rsvp_no = @rsvps.where(attendance: "No").order("created_at desc")
-    # @total_participants = 0
-    # @rsvps.each do |rsvp|
-    #   @total_participants += 1 if rsvp.attendance == "Yes"
-    # end
-    # @rsvp_yes = @rsvps.where(attendance: "Yes").order("created_at desc")
-    # @rsvp_no = @rsvps.where(attendance: "No").order("created_at desc")
     @rsvps = Rsvp.all
     @total_participants = 0
     @rsvps.each do |rsvp|

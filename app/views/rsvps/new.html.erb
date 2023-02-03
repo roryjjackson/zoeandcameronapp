@@ -5,10 +5,10 @@
     <h2 class="reply-text" id="rsvp-title" style="margin: 20px;">Please fill the form out <strong>ONCE</strong> per attendee</h2>
     <div class="rsvp-form">
       <%= simple_form_for(@rsvp) do |f| %>
-        <%= f.input :name, :label => "Please write your FULL name" %>
-        <%= f.input :attendance, as: :radio_buttons, collection: [['Yes', "Yes!! I'm coming!"], ['No', "No, sadly I can't come 😢"]], label_method: :second, value_method: :first %>
+        <%= f.input :name, :label => "Please write your FULL name", required: true %>
+        <%= f.input :attendance, as: :radio_buttons, collection: [['Yes', "Yes!! I'm coming!"], ['No', "No, sadly I can't come 😢"]], label_method: :second, value_method: :first, required: true %>
         <%= f.input :song, :label => "Name a song that we can add to our wedding playlist!" %>
-        <%= f.input :diet, :label => "Any dietary requirements?" %>
+        <%= f.input :diet, :label => "Any dietary requirements?", required: true %>
         <div id="rsvp-confirm">
           <%= f.submit "Complete the form", class: "rsvp_button btn-flat" %>
         </div>
