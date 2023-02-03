@@ -1,4 +1,4 @@
 class Rsvp < ApplicationRecord
   # belongs_to :user
-  validates :name, :attendance, :diet, presence: true
+  validates :name, :attendance, presence: true
 end
