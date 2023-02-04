@@ -10,12 +10,10 @@
   background: transparent;
   width: 100%;
   height: 80px;
-  // border-bottom: solid rgba(0, 0, 0, 0.091) 1px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.053);
   z-index: 5;
-  color: rgba(0, 0, 0, 0.657);
-  // background-color: #f4f4f4;
-  background-color: white;
+  color: rgba(255, 255, 255, 0.896);
+  background-color: rgb(26, 26, 26);
 }
 
 .log-item:hover {
@@ -23,17 +21,6 @@
 }
 
 .nav-link {
-  // border: solid black 1px ;
-  // width: 100px;
-  // height: 40px;
-  // color: white;
-  // font-size: 20px;
   padding: 5px;
   border-radius: 10px;
-  // color: transparent;
-  // background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
-  // -webkit-background-clip: text;
-  // animation: animate 5s linear infinite;
-  // -webkit-background-size: 500%;
-  // background-size: 500%;
 }
