@@ -7,14 +7,13 @@ body {
   background-size: 2000px;
   background-repeat: space repeat;
   background-position: 600px;
+  background-color: #dfe0e1;
 }
 .maininfo img {
   max-height: 100px;
 }
 
 .music {
-  // justify-content: center;
-  // align-items: center;
   margin: auto;
   text-align: center;
 }
@@ -92,7 +91,15 @@ p {
 }
 
 a {
-  font-size: 20px !important;
+  font-size: 10px;
+}
+
+strong {
+  font-size: 18px;
+}
+
+a.nav-link {
+  font-size: 14px;
 }
 
 li {
